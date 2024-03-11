@@ -28,9 +28,9 @@ Remember, the goal here is not just to complete the task but to understand and a
 6. You may add your own helper methods or data fields, but they must be declared `private`.
 
 ## WestWorld package [DO NOT MODIFY]
-Use the [JavaDoc]() to navigate the API. You do NOT need to read the code to use the package. However, if you are curious about how P1 and E2 solutions may look like, you are ecoruraged to do so.
+Refer to the JavaDoc( located at `westworld/docs/index.html`) to explore the API; it's unnecessary to review the code to utilize the package. However, if you're interested in potential solutions for P1 and E2, you're encouraged to examine them.
 
-Now, you will need to use the `Robot` class to implement your `sublime` package. As you red the documentation, there are four easter eggs incepted in P1, and how E1's Robot is now extremely powerful, abstractely, of course.
+Now, you'll need to employ the `Robot` class for your `sublime` package implementation. While reading the documentation, note that four easter eggs have been incorporated within P1, illustrating how E1's Robot has become extremely powerful, albeit abstractly.
 
 # DO NOT PROCEED WITHOUT READING THE DOCUMENTATION
 # MAKE SURE YOUR JAVA VERSION IS AT LEAST 11
