@@ -41,29 +41,29 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### Do not use deprecated constructs
 
-### Realm Enum
+### Realm Enum (3 lines)
 
-### NarrativeLoop
+### NarrativeLoop (4 methods, around 10 lines each, loops, similar to the collections library)
 
 Filtering SystemWhole parts by kind and returning an Realm enum. Three arralist are poluated based on the filter.  this is the 20% algorithm.
 
-### MazeLoop (inherits from NarrativeLoop)
+### MazeLoop (inherits from NarrativeLoop) 6 lines
 
-### HostLoop (inherits from NarrativeLoop)
+### HostLoop (inherits from NarrativeLoop) 4 lines
 
-### Freezable Interface
+### Freezable Interface 2 line
 
-### Analyzable Interface
+### Analyzable Interface 2 lines
 
-### Wipeable Interface (inherits from Analyzable)
+### Wipeable Interface (inherits from Analyzable) 2 lines
 
-### Dolores Class (inherits from Robot)
+### Dolores Class (inherits from Robot) 4 methods, one liners
 
-### Host Class (inherits from Dolores)
+### Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
 
-### Maeve Class (inherits from Host)
+### Maeve Class (inherits from Host) one liner, retruns super via interface method
 
-### DoloresTest Class
+### DoloresTest Class one test class, one test method, with hints
 
 ## Testing:
 
