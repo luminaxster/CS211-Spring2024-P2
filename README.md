@@ -43,6 +43,13 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### Realm Enum
 
+### NarrativeLoop
+
+Filtering SystemWhole parts by kind and returning an Realm enum. Three arralist are poluated based on the filter.  this is the 20% algorithm.
+
+### MazeLoop (inherits from NarrativeLoop)
+
+### HostLoop (inherits from NarrativeLoop)
 
 ### Freezable Interface
 
@@ -54,9 +61,9 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### Host Class (inherits from Dolores)
 
-### Host Class (inherits from Dolores)
+### Maeve Class (inherits from Host)
 
-### Bernard Class
+### DoloresTest Class
 
 ## Testing:
 
