@@ -9,10 +9,10 @@ The purpose of this assignment is to practice using a generic class via `ArrayLi
 - None yet.
 
 ## Rules
-
-1. **This project is an individual effort; the Honor Code applies.**
-2. You may import the following classes from `java.util`: `ArrayList`, `List`. Other imports are not allowed.
+0. **This project is an individual effort; the Honor Code applies.**
+1. Do not modify the structure of the directories nor the code for the package `westworld`. 
+2. You may import the following types from `java.util`: `ArrayList`, `List`; `westworld`: all. Other imports are not allowed.
 3. The `main` method will not be tested; you may use it any way you want.
 4. Comment your code, especially any parts that are not obvious what you're doing.
 5. Class fields should not in general be visible to other classes (unless otherwise specified). Create getter methods instead.
-You may add your own helper methods or data fields, but they must be declared `private`.
+6. You may add your own helper methods or data fields, but they must be declared `private`.
