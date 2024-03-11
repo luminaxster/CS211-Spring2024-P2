@@ -62,7 +62,7 @@ You are responsible for ensuring your code functions correctly according to the 
 
 ## Submission:
 
-Submission instructions are as follows (up to **5pts** penalty for not following the below instructions).
+Submission instructions are as follows (up to **5pts** penalty for not following the below instructions). No exceptions this time (pun intended).
 
 Upload all of your source files (*.java) to the P2 assignment on [Gradescope](https://www.gradescope.com/). Do not include anything else (no .class file, no blank templates, not this file, no .zip files).
 At the top of each source file, include the following information in a comment: Name, gmu netID, g#, lecture section, and lab section. Include information for all group members. Here's an example:
