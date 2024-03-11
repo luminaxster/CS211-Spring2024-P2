@@ -32,6 +32,10 @@ Use the [JavaDoc]() to navigate the API. You do NOT need to read the code to use
 
 Now, you will need to use the `Robot` class to implement your `sublime` package. As you red the documentation, there are four easter eggs incepted in P1, and how E1's Robot is now extremely powerful, abstractely, of course.
 
+# DO NOT PROCEED WITHOUT READING THE ABOVE API DOCUMENTATION
+
+---
+
 ## Sublime package [YOUR PROJECT]
 
 ### Realm Enum
