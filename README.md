@@ -2,7 +2,7 @@
 
 ###  CS 211: Object Oriented Programming - Spring 2024 
 
-The purpose of this assignment is to practice using a generic class via `ArrayList`. Your task is to create a set of classes for the `sublime` package. This will require an understanding of generics, interfaces, exceptions, enumerations, and two types from the Java `collections` framework, and the `westworld` package.
+The purpose of this assignment is to practice using a generic class via `ArrayList`. Your task is to create a set of types for the `sublime` package. This will require an understanding of generics, interfaces, exceptions, enumerations, and two types from the Java `collections` framework, and the `westworld` package.
 
 ## ChangeLog
 
