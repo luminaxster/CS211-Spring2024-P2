@@ -27,6 +27,29 @@ Remember, the goal here is not just to complete the task but to understand and a
 5. Class fields should not in general be visible to other classes (unless otherwise specified). Create getter methods instead.
 6. You may add your own helper methods or data fields, but they must be declared `private`.
 
+## WestWorld package [DO NOT MODIFY]
+Use the [JavaDoc]() to navigate the API. You do NOT need to read the code to use the package. However, if you are curious about how P1 and E2 solutions may look like, you are ecoruraged to do so.
+
+Now, you will need to use the `Robot` class to implement your `sublime` package. As you red the documentation, there are four easter eggs incepted in P1, and how E1's Robot is now extremely powerful, abstractely, of course.
+
+## Sublime package [YOUR PROJECT]
+
+### Realm Enum
+
+
+### Freezable Interface
+
+### Analyzable Interface
+
+### Wipeable Interface (inherits from Analyzable)
+
+### Dolores Class (inherits from Robot)
+
+### Host Class (inherits from Dolores)
+
+### Host Class (inherits from Dolores)
+
+### Bernard Class
 
 ## Testing:
 
