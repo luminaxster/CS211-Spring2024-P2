@@ -45,11 +45,11 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### NarrativeLoop (No instantiable class)
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
-### NarrativeLoop Implementation Flow
+#### Methods Flow
 
 To implement the `NarrativeLoop` class, follow these steps closely, ensuring each part is executed as described:
 
-#### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
+##### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
 - Begin by iterating over each `SystemWhole` in the `emulationContext` array.
   - For each `SystemWhole`, iterate through the `Machines` it contains.
