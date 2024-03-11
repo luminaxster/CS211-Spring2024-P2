@@ -1,4 +1,6 @@
-# CS 211: Object Oriented Programming - Spring 2024 - Project 2: Deus Ex Machina
+# Project 2: Deus Ex Machina
+
+###  CS 211: Object Oriented Programming - Spring 2024 
 
 The purpose of this assignment is to practice using a generic class via `ArrayList`. Your task is to create a set of classes for the `sublime` package. This will require an understanding of generics, interfaces, exceptions, enumerations, and two types from the Java collections framework.
 
