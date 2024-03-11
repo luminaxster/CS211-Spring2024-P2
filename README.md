@@ -43,9 +43,43 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### Realm Enum (3 lines)
 
-### NarrativeLoop (4 methods, around 10 lines each, loops, similar to the collections library)
+### NarrativeLoop (No instantiable class)
+Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
+### NarrativeLoop Implementation Flow
 
-Filtering SystemWhole parts by kind and returning an Realm enum. Three arralist are poluated based on the filter.  this is the 20% algorithm.
+To implement the `NarrativeLoop` class, follow these steps closely, ensuring each part is executed as described:
+
+#### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
+
+- Begin by iterating over each `SystemWhole` in the `emulationContext` array.
+  - For each `SystemWhole`, iterate through the `Machines` it contains.
+  - Invoke `determineRealm` with the `Machine`'s kind and both context arrays as parameters.
+  - If `determineRealm` returns `Realm.EMULATION` and `containsKind` confirms the `emulation` list doesn't already include a `Machine` of this kind, add the `SystemWhole` to `emulation`.
+- Repeat the process for the `simulacraContext` array.
+  - For `Realm.SIMULACRA`, add unique `Machine` kinds to `simulacra`.
+  - For `Realm.SIMULATION`, add unique `Machine` kinds to `simulation`.
+
+#### Step 2: determineRealm(String kind, SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
+
+- Check for the presence of the `Machine` kind in both `emulationContext` and `simulacraContext` using `isInContext`.
+- Assign `Realm.SIMULATION` if the kind is found in both contexts.
+- Assign `Realm.SIMULACRA` if the kind is found only in `simulacraContext`.
+- Default to `Realm.EMULATION` if neither of the above conditions is met.
+
+#### Step 3: isInContext(String kind, SystemWhole[] context)
+
+- Iterate through the `SystemWhole` array provided as `context`.
+  - Within each `SystemWhole`, iterate through its `Machines`.
+  - Return `true` if any `Machine` matches the specified kind.
+- Return `false` if no match is found.
+
+#### Step 4: containsKind(List<SystemWhole> list, String kind)
+
+- Iterate over the provided `list` of `SystemWhole` instances.
+  - For each `SystemWhole`, iterate through its `Machines`.
+  - Return `true` if any `Machine` within the `SystemWhole` matches the specified kind.
+- Return `false` if no matching `Machine` kind is found within any `SystemWhole` in the list.
+
 
 ### MazeLoop (inherits from NarrativeLoop) 6 lines
 
