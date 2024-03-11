@@ -2,7 +2,7 @@
 
 ###  CS 211: Object Oriented Programming - Spring 2024 
 
-The purpose of this assignment is to familiarize you with generics through the use of `ArrayList` within a package. Your task involves creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, enumerations, and two types from the Java `collections` framework, as well as the `westworld` package. The test class `BernardTest.java` is provided for you to include your test cases. Scripts for compiling your code and executing your tests are also provided.
+The purpose of this assignment is to familiarize you with generics through the use of `ArrayList` within a package. Your task involves creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, enumerations, and two types from the Java `collections` framework, as well as the `westworld` package. To do so, you will become familiar with reading Java docs. The test class `BernardTest.java` is provided for you to include your test cases. Scripts for compiling your code and executing your tests are also provided.
 
 ## Prelude
 
@@ -38,6 +38,8 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 ---
 
 ## Sublime package [YOUR PROJECT]
+
+### Do not use deprecated constructs
 
 ### Realm Enum
 
