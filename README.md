@@ -45,7 +45,7 @@ Remember to be precise with the names and types in every abstraction you work on
 
 All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` is located in `src.test`.
 
-### Realm Enum
+### A.  Realm Enum
 The enum `Realm` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
 
 Enum Details:
@@ -54,17 +54,17 @@ Enum Details:
   - `SIMULACRA`: Denotes abstracted or distorted representations, not directly tied to the original.
   - `SIMULATION`: Indicates simplified models for exploring system behaviors.
 
-### Abstract NarrativeLoop Class
+### B. Abstract NarrativeLoop Class
 
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter. We'll focus on the `updateNarrativeLoops` method, which will execute the core algorithm. In this class:
 
-### Fields
+#### Fields
 
 The `NarrativeLoop` class includes three fields, all `final` and `protected`, `List` of `SystemWhole`s initialized to new `ArrayList`s:
 
-1. **emulation**
-2. **simulacra**
-3. **simulation**
+- **emulation**
+- **simulacra**
+- **simulation**
 
 #### Methods Flow
 
@@ -102,29 +102,29 @@ To implement the `NarrativeLoop` class, follow these steps closely, ensuring eac
 - Return `false` if no matching `Machine` kind is found within any `SystemWhole` in the list.
 
 
-### MazeLoop Class (inherits from NarrativeLoop)
+### C. MazeLoop Class (inherits from NarrativeLoop)
 
 `MazeLoop` is a subclass of `NarrativeLoop`, designed for narratives centered around `Dolores` alone, It overrides the `wipeNarrativeLoops()` method to implement maze-specific narrative wiping logic, which is just not allow the inherited wipe behavior.
 
-### HostLoop Class (inherits from NarrativeLoop)
+### D. HostLoop Class (inherits from NarrativeLoop)
 
 `HostLoop` is a subclass of `NarrativeLoop`, designed for narratives centered around `hosts`. It inherits the functionalities of `NarrativeLoop` as is.
 
-### Freezable Interface
+### E. Freezable Interface
 
-### Analyzable Interface
+### F. Analyzable Interface
 
-### Wipeable Interface (inherits from Analyzable)
+### G. Wipeable Interface (inherits from Analyzable)
 
-### Dolores Class (inherits from Robot) 4 methods, one liners
+### H. Dolores Class (inherits from Robot) 4 methods, one liners
 
-### Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
+### I. Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
 
 ## Testing:
 
 You are responsible for ensuring your code functions correctly according to the description provided above. A validation checker will be made available on gradescope which will try to catch errors that would prevent the autograder from running. Passing this validation check does not guarantee that all of the required logic has been implemented correctly. You should write your own tests which exercise all of the required functionality in a variety of different situations in order to verify that your code operates as you expect it to. Code which does not compile or fails any of the validation checks may receive zero credit.
 
-### DoloresTest Class
+### J. DoloresTest Class
 
 Your test class `DoloresTest.java` in located in `src.test`. Provided test class template, one test method, with hints.
 
