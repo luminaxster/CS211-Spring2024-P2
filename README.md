@@ -11,7 +11,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 ## ChangeLog
 
-- Remove group instructions, it is an individual project.
+- `03/12/2024 10:45 AM` Remove group instructions, it is an individual project.
 
 ## Prelude
 
