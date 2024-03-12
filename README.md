@@ -319,11 +319,11 @@ Upload all of your source files (*.java) to the P2 assignment in the `sublime` d
 At the top of each source file, include the following information in a comment: Name, gmu netID, g#, lecture section, and lab section. Include information for all group members. Here's an example:
 ```java
 /*
-* Names: Donald Knuth, Alan Turing
-* netID: dknuth, aturin3
-* G#: 00123456, 01101001
-* Lecture section: 004, 004
-* Lab section: 213, 212
+* Name: Donald Knuth
+* netID: dknuth
+* G#: 00123456
+* Lecture section: 004
+* Lab section: 213
 */
 ```
 
