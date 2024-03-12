@@ -63,7 +63,7 @@ Remember:
   - Be precise with the names and types in every abstraction you work on.
   - Prefer copying from the description rather than transcribing.
   - Be mindful of naming conventions and case sensitivity.
-  - Compile and run your code (including tets) **locally**. Refrain from using GradeScope as fallback.
+  - Compile and run your code (including tests) **locally**. Refrain from using GradeScope as fallback.
   - Do not shy away from the shell (terminal, command prompt).
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
