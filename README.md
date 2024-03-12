@@ -313,11 +313,11 @@ java -cp bin:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.ja
 java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher execute --scan-class-path
 ```
 
-## Submission: Only .java files in the `sublime` directory
+## Uploading your solution: Only .java files in the `sublime` directory
 
-Submission instructions are as follows (up to **5pts** penalty for not following the below instructions). No exceptions this time (pun intended).
+The instructions are as follows (up to **5pts** penalty for not following the below instructions). No exceptions this time (pun intended). **It is automatically verified now.**
 
-Upload all of your source files (*.java) to the P2 assignment in the `sublime` directory on [Gradescope](https://www.gradescope.com/). Do not include anything else (no .class file, no blank templates, not this file, no .zip files).
+Upload all of your source files (*.java) to the P2 assignment in the `sublime/src/main` directory (`sublime\src\main` folder) on [Gradescope](https://www.gradescope.com/). Do not include anything else (no .class file, no blank templates, not this file, no .zip files).
 At the top of each source file, include the following information in a comment: Name, gmu netID, g#, lecture section, and lab section. Here's an example:
 ```java
 /*
