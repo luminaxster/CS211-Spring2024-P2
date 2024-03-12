@@ -271,14 +271,26 @@ You are responsible for ensuring your code functions correctly according to the 
 
 Your test class `DoloresTest.java` in located in `src.test`. Provided test class template, one test method, with hints. **It will not be grade, but future projects and exercises will.**
 
-To run you code via `JUnit`:
+#### Compile your code bundle
 
-#### Unix-Like (Linux, MacOS)
+##### Unix-Like (Linux, MacOS)
+
+```bash
+javac -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar -d bin westworld/**/*.java sublime/**/*.java
+```
+##### MS Windows
+```cmd
+javac -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\**\*.java sublime\**\*.java
+```
+
+#### Run your code via `JUnit` tests:
+
+##### Unix-Like (Linux, MacOS)
 
 ```sh
 java -cp bin:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher execute --scan-class-path
 ```
-#### MS Windows
+##### MS Windows
 ```cmd
 java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher --scan-class-path
 ```
