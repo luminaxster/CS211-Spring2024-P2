@@ -219,7 +219,8 @@ This method, final and protected, throws an `UnsupportedOperationException`, ind
 
 ##### `boolean freezeAllMotorFunctions()`
 
-This public method implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful. **It is ineffective on Dolores, it just returns false.**
+This public method implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful.
+**It is ineffective on Dolores, it just returns false.**
 
 ##### `MemorySnapshot analyze()`
 
@@ -231,7 +232,8 @@ Overrides the `analyze` method (public) from the `Analyzable` interface. It is d
 
 ##### `void wipe()`
 
-Implements the wipe functionality required by the `Wipeable` interface. The public method's body is to be defined with logic for resetting or clearing `Dolores`'s state, with a focus on handling narrative loops and memory states.** Dolores does nothing with this method, an empty implementation is all there is.**
+Implements the wipe functionality required by the `Wipeable` interface. The public method's body is to be defined with logic for resetting or clearing `Dolores`'s state, with a focus on handling narrative loops and memory states.
+**Dolores does nothing with this method, an empty implementation is all there is.**
 
 ### J. Host Class (inherits from Dolores)
 
@@ -246,7 +248,7 @@ The `Host` class represents a nuanced entity capable of engaging with narrative 
 
 ##### Constructor: `Host(NarrativeLoop narrativeLoop)`
 
-Make sure it calls its the `Dolores` superclass cons.
+Make sure it calls its the `Dolores` superclass's constructor.
 - The `narrativeLoop` argument is directly assigned to the `Host` class's `private final NarrativeLoop narrativeLoop` field. This field holds a reference to the `NarrativeLoop` instance associated with this `Host`.
 - `addNarrativeLoop(narrativeLoop);` adds the provided `NarrativeLoop` instance to a collection within `Dolores`, ensuring it's part of Dolores's narrative management.
 
