@@ -43,10 +43,10 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 Remember to be precise with the names and types in every abstraction you work on. Prefer copying from the description rather than transcribing, and be mindful of naming conventions and case sensitivity.
 
-All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` in located in `src.test`.
+All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` is located in `src.test`.
 
 ### Realm Enum
-This `enum` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
+The enum `Realm` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
 
 Enum Details:
 
@@ -56,7 +56,7 @@ Enum Details:
 
 ### Abstract NarrativeLoop Class
 
-Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
+Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter. We'll focus on the `updateNarrativeLoops` method, which will execute the core algorithm. In this class:
 
 ### Fields
 
