@@ -39,7 +39,7 @@ Click on green button `<> code` at the top-right of this page and select **Downl
 
 ### The directory  `CS211_P2` contains the directories `westworld`, `sublime`, and `lib`.
 
-### All required to compile and run your code.
+### All are required to compile and run your code.
 
 
 ## WestWorld package [DO NOT MODIFY]
