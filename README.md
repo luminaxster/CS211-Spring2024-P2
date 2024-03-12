@@ -34,6 +34,8 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 # DO NOT PROCEED WITHOUT READING THE DOCUMENTATION
 # MAKE SURE YOUR JAVA VERSION IS AT LEAST 11
+# Do not use deprecated types or members
+
 
 ---
 
@@ -42,8 +44,6 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 Remember to be precise with the names and types in every abstraction you work on. Prefer copying from the description rather than transcribing, and be mindful of naming conventions and case sensitivity.
 
 All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` in located in `src.test`.
-
-### Do not use deprecated types or members
 
 ### Realm Enum
 This `enum` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
