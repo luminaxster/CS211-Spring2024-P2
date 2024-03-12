@@ -24,7 +24,7 @@ To guide you through this project, we included the easter eggs in P1. The aim is
 
 ## Rules
 0. **This project is an individual effort; the Honor Code applies.**
-1. [**Download the source code**](). Do not modify the structure of the directories nor the code for the package `westworld`. 
+1. **Download the source code (click green button "<> code" at the top-right of the page, and select Download ZIP)**. Do not modify the structure of the directories nor the code for the package `westworld`. 
 2. You may import the following types from `java.util`: `ArrayList`, `List`; `westworld`: all. Other imports are not allowed.
 3. The `main` method is no longer recommended; you will now required to put the "main" logic in unit tests.
 4. Comment your code, especially any parts that are not obvious what you're doing. Consider explaining your loops and methods. 
