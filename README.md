@@ -2,13 +2,20 @@
 
 ###  CS 211: Object Oriented Programming - Spring 2024 
 
-The purpose of this assignment is to familiarize you with generics through the use of `ArrayList` within a package. Your task involves creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, enumerations, and two types from the Java `collections` framework, as well as the `westworld` package. To do so, you will become familiar with reading Java docs. The test class `DoloresTest.java` is provided for you to include your test cases. Scripts for compiling your code and executing your tests are also provided.
+The purpose of this assignment is to familiarize you with generics through the use of `ArrayList` within a package. Your tasks involve:
+
+  - Creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, enumerations.
+  - Learning two types from the Java `collections` framework.
+  - Become familiar with reading Java docs of the `westworld` package.
+  - Run tests via the template class `DoloresTest.java`.
 
 ## Prelude
 
 As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
 
 To guide you through this project, we included the easter eggs in P1. The aim is to ensure that the instructions are clear and the level of difficulty is manageable. The primary focus will be on structuring your code correctly, which will account for 50% of the project. The remaining 50% will involve algorithmic challenges within `NarrativeLoop`.
+
+**Scripts for compiling your code and executing your tests are also provided.**
 
 ## ChangeLog
 
@@ -154,7 +161,37 @@ The `Wipeable` interface extends the `Analyzable` interface, introducing **speci
 
 In alignment with the interface **specification**, implementing classes are tasked with defining a behavior for the `wipe` method. This method, when invoked, should clear or reset the state of the object.
 
-### I. Dolores Class (inherits from Robot) 4 methods, one liners
+### I. Dolores Class (inherits from Robot and is Wipeable)
+
+The `Dolores` class, extending `Robot` (from the `westworld` package) and implementing the `Wipeable` interface, embodies a complex entity capable of managing narrative loops and adhering to wipeable specifications.
+
+#### Constructor: `protected Dolores()`
+
+Initializes `Dolores` with characteristics such as emergences, serial number, and capabilities (flies, autonomous, teleoperated), leveraging the `Robot` superclass constructor. Provide defaults for the parent:
+
+```java
+String[] emergences, int serialNumber, boolean flies, boolean autonomous, boolean teleoperated
+```
+
+#### Method: `final protected void addNarrativeLoop(NarrativeLoop narrativeLoop)`
+
+This method allows for the addition of `NarrativeLoop` instances to `Dolores`'s internal list, enabling the management and tracking of various narrative states.
+
+#### Method: `protected final Machine[] getAbsoluteCapabilities()`
+
+Throws an `UnsupportedOperationException`, indicating that fetching absolute capabilities directly is not supported, aligning with the need to safeguard sensitive information or functionality.
+
+### Method: `public boolean freezeAllMotorFunctions()`
+
+Implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful.
+
+#### Method: `public MemorySnapshot analyze()`
+
+Overrides the `analyze` method from the `Analyzable` interface. It provides logic to create a `MemorySnapshot` based on the latest `NarrativeLoop` in `Dolores`'s list, capturing the current state of narrative realms.
+
+#### Method: `public void wipe()`
+
+Implements the wipe functionality required by the `Wipeable` interface. The method's body is to be defined with logic for resetting or clearing `Dolores`'s state, with a focus on handling narrative loops and memory states.
 
 ### J. Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
 
