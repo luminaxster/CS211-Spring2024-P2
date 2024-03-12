@@ -6,7 +6,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 ## Prelude
 
-As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robo`t.
+As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
 
 In P2, you will be tasked with extending and implementing logic in new classes, interfaces, and a test class that you'll have to implement to specification.
 
@@ -55,7 +55,9 @@ Enum Details:
   - `SIMULATION`: Indicates simplified models for exploring system behaviors.
 
 ### Abstract NarrativeLoop Class
+
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
+
 #### Methods Flow
 
 To implement the `NarrativeLoop` class, follow these steps closely, ensuring each part is executed as described:
@@ -100,23 +102,23 @@ To implement the `NarrativeLoop` class, follow these steps closely, ensuring eac
 
 `HostLoop` is a subclass of `NarrativeLoop`, designed for narratives centered around `hosts`. It inherits the functionalities of `NarrativeLoop` as is.
 
-### Freezable Interface 2 line
+### Freezable Interface
 
-### Analyzable Interface 2 lines
+### Analyzable Interface
 
-### Wipeable Interface (inherits from Analyzable) 2 lines
+### Wipeable Interface (inherits from Analyzable)
 
 ### Dolores Class (inherits from Robot) 4 methods, one liners
 
 ### Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
 
-### Maeve Class (inherits from Host) one liner, retruns super via interface method
-
-### DoloresTest Class one test class, one test method, with hints
-
 ## Testing:
 
 You are responsible for ensuring your code functions correctly according to the description provided above. A validation checker will be made available on gradescope which will try to catch errors that would prevent the autograder from running. Passing this validation check does not guarantee that all of the required logic has been implemented correctly. You should write your own tests which exercise all of the required functionality in a variety of different situations in order to verify that your code operates as you expect it to. Code which does not compile or fails any of the validation checks may receive zero credit.
+
+### DoloresTest Class
+
+Your test class `DoloresTest.java` in located in `src.test`. Provided test class template, one test method, with hints.
 
 ## Submission:
 
