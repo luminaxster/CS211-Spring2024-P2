@@ -308,7 +308,7 @@ java -cp bin:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.ja
 java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher execute --scan-class-path
 ```
 
-## Submission:
+## Submission: Only .java files in the `sublime` directory
 
 Submission instructions are as follows (up to **5pts** penalty for not following the below instructions). No exceptions this time (pun intended).
 
