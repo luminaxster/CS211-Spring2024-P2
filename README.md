@@ -46,12 +46,13 @@ All your work must be located in the directories matching the `src.main` package
 ### Do not use deprecated types or members
 
 ### Realm Enum
-This enum is integral to a narrative management system, specifically used within the NarrativeLoop class to categorize narrative processes.
+This `enum` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
 
 Enum Details:
-EMULATION: Represents high-fidelity replications of the original system.
-SIMULACRA: Denotes abstracted or distorted representations, not directly tied to the original.
-SIMULATION: Indicates simplified models for exploring system behaviors.
+
+  - `EMULATION`: Represents high-fidelity replications of the original system.
+  - `SIMULACRA`: Denotes abstracted or distorted representations, not directly tied to the original.
+  - `SIMULATION`: Indicates simplified models for exploring system behaviors.
 
 ### Abstract NarrativeLoop Class
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
