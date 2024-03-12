@@ -12,6 +12,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 ## ChangeLog
 
 - `03/12/2024 10:45 AM` Remove group instructions, it is an individual project.
+- `03/12/2024 2:50 PM` freezeAllMotorFunctions(): removed the freeze-wipe logic confusion. Dolores does not implements Freezable. 
 
 ## Prelude
 
@@ -219,7 +220,7 @@ This method, final and protected, throws an `UnsupportedOperationException`, ind
 
 ##### `boolean freezeAllMotorFunctions()`
 
-This public method implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful.
+This public method implements the freeze-like operation. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful.
 **It is ineffective on Dolores, it just returns false.**
 
 ##### `MemorySnapshot analyze()`
