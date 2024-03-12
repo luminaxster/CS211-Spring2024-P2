@@ -47,7 +47,8 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 Remember:
 
-  - Start now!
+  - Yes, there is a lot of text, overwhelming even. **Your code will not be, we promise.**
+  - **Start now! Do not undestimate the effort it takes to navigate the logic.**
   - Be precise with the names and types in every abstraction you work on.
   - Prefer copying from the description rather than transcribing.
   - Be mindful of naming conventions and case sensitivity.
