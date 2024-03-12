@@ -41,9 +41,15 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ### Do not use deprecated constructs
 
-### Realm Enum (3 lines)
+### Realm Enum
+An enum named Realm in the src.main package. This enum is integral to a narrative management system, specifically used within the NarrativeLoop class to categorize narrative processes.
 
-### NarrativeLoop (No instantiable class)
+Enum Details:
+EMULATION: Represents high-fidelity replications of the original system.
+SIMULACRA: Denotes abstracted or distorted representations, not directly tied to the original.
+SIMULATION: Indicates simplified models for exploring system behaviors.
+
+### Abstract NarrativeLoop Class
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
 #### Methods Flow
 
@@ -81,9 +87,13 @@ To implement the `NarrativeLoop` class, follow these steps closely, ensuring eac
 - Return `false` if no matching `Machine` kind is found within any `SystemWhole` in the list.
 
 
-### MazeLoop (inherits from NarrativeLoop) 6 lines
+### MazeLoop Class (inherits from NarrativeLoop)
 
-### HostLoop (inherits from NarrativeLoop) 4 lines
+`MazeLoop` is a subclass of `NarrativeLoop`, designed for narratives centered around `Dolores` alone, It overrides the `wipeNarrativeLoops()` method to implement maze-specific narrative wiping logic, which is just not allow the inherited wipe behavior.
+
+### HostLoop Class (inherits from NarrativeLoop)
+
+`HostLoop` is a subclass of `NarrativeLoop`, designed for narratives centered around `hosts`. It inherits the functionalities of `NarrativeLoop` as is.
 
 ### Freezable Interface 2 line
 
