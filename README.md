@@ -67,7 +67,7 @@ Remember:
   - Do not shy away from the shell (terminal, command prompt).
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
-All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`). Implement the types to spec from A to J. `Dolores.java` in the only file there.
+All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`). Implement the types to spec from A to J. `Dolores.java` is the only file there so far.
 
 
 Your test class `DoloresTest.java` is located in `src.test`.
