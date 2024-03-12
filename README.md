@@ -6,11 +6,11 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 ## Prelude
 
-As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a Machine within Exercise 2's (E2) Robot.
+As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robo`t.
 
-In P2, you will be tasked with extending and implementing logic in two new classes, one interface, and a test class that you'll have to implement to specfication.
+In P2, you will be tasked with extending and implementing logic in new classes, interfaces, and a test class that you'll have to implement to specification.
 
-To guide you through this project, we included the easter eggs in P1. The aim is to ensure that the instructions are clear and the level of difficulty is manageable. The primary focus will be on structuring your code correctly, which will account for 80% of the project. The remaining 20% will involve algorithmic challenges.
+To guide you through this project, we included the easter eggs in P1. The aim is to ensure that the instructions are clear and the level of difficulty is manageable. The primary focus will be on structuring your code correctly, which will account for 50% of the project. The remaining 50% will involve algorithmic challenges within `NarrativeLoop`.
 
 Remember, the goal here is not just to complete the task but to understand and apply Java constructs effectively. Take this opportunity to solidify your understanding and showcase your problem-solving skills in a structured and logical manner.
 
@@ -20,7 +20,7 @@ Remember, the goal here is not just to complete the task but to understand and a
 
 ## Rules
 0. **This project is an individual effort; the Honor Code applies.**
-1. Do not modify the structure of the directories nor the code for the package `westworld`. 
+1. [**Download the source code**](). Do not modify the structure of the directories nor the code for the package `westworld`. 
 2. You may import the following types from `java.util`: `ArrayList`, `List`; `westworld`: all. Other imports are not allowed.
 3. The `main` method is no longer recommended; you will now required to put the "main" logic in unit tests.
 4. Comment your code, especially any parts that are not obvious what you're doing. Consider explaining your loops and methods. 
@@ -39,10 +39,14 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ## Sublime package [YOUR PROJECT]
 
-### Do not use deprecated constructs
+Remember to be precise with the names and types in every abstraction you work on. Prefer copying from the description rather than transcribing, and be mindful of naming conventions and case sensitivity.
+
+All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` in located in `src.test`.
+
+### Do not use deprecated types or members
 
 ### Realm Enum
-An enum named Realm in the src.main package. This enum is integral to a narrative management system, specifically used within the NarrativeLoop class to categorize narrative processes.
+This enum is integral to a narrative management system, specifically used within the NarrativeLoop class to categorize narrative processes.
 
 Enum Details:
 EMULATION: Represents high-fidelity replications of the original system.
