@@ -45,7 +45,15 @@ Now, you'll need to employ the `Robot` class for your `sublime` package implemen
 
 ## Sublime package [YOUR PROJECT]
 
-Remember to be precise with the names and types in every abstraction you work on. Prefer copying from the description rather than transcribing, and be mindful of naming conventions and case sensitivity.
+Remember:
+
+  - Start now!
+  - Be precise with the names and types in every abstraction you work on.
+  - Prefer copying from the description rather than transcribing.
+  - Be mindful of naming conventions and case sensitivity.
+  - Compile, run your code (including tets) **locally**.
+  - Do not shy away from the shell (terminal, command prompt).
+  -** You are a computer scientist, you are in control of tech not the other way around.**
 
 All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` is located in `src.test`.
 
