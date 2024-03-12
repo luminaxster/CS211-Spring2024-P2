@@ -37,7 +37,7 @@ Click on green button `<> code` at the top-right of this page and select **Downl
 
 ![image](https://github.com/luminaxster/CS211-Spring2024-P2/assets/6577822/5b85c309-12d8-493e-963e-d22220a65b3d)
 
-### The directory  `CS211_P2` contains the packages `westworld`, `sublime`, and `lib`.
+### The directory  `CS211_P2` contains the directories `westworld`, `sublime`, and `lib`.
 
 All required to compile and run your code.
 
@@ -312,7 +312,7 @@ java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.ja
 
 Submission instructions are as follows (up to **5pts** penalty for not following the below instructions). No exceptions this time (pun intended).
 
-Upload all of your source files (*.java) to the P2 assignment on [Gradescope](https://www.gradescope.com/). Do not include anything else (no .class file, no blank templates, not this file, no .zip files).
+Upload all of your source files (*.java) to the P2 assignment in the `sublime` directory on [Gradescope](https://www.gradescope.com/). Do not include anything else (no .class file, no blank templates, not this file, no .zip files).
 At the top of each source file, include the following information in a comment: Name, gmu netID, g#, lecture section, and lab section. Include information for all group members. Here's an example:
 ```java
 /*
@@ -324,5 +324,5 @@ At the top of each source file, include the following information in a comment: 
 */
 ```
 
-Verify your submission: Go back to Gradescope, download the files you just submitted, double-check their contents, rerun your tests. If something is wrong, you can resubmit as many times as you want before the deadline expires.
+**Verify your submission:** Go back to Gradescope, download the files you just submitted, double-check their contents, rerun your tests. If something is wrong, you can resubmit as many times as you want before the deadline expires.
 Make a backup of your files on OneDrive (use your mason account).
