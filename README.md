@@ -68,7 +68,14 @@ The `NarrativeLoop` class includes three fields, all `final` and `protected`, `L
 
 #### Methods Flow
 
-To implement the `NarrativeLoop` class, follow these steps closely, ensuring each part is executed as described:
+In this class, you will process simple emergences, each characterized by a single `kind` property contained within a string. For example, emergences like `["{'kind': 'Square'}", "{'kind': 'Box'}"]` will be used.
+
+Make sure that you:
+
+- Implement logic in the `NarrativeLoop` class to categorize emergences into three `ArrayLists`: `emulation`, `simulacra`, and `simulation`, based on their `kind`.
+- Provide test values for each list to adequately exercise the categorization logic.
+
+Now, to implement the `NarrativeLoop` class methods, follow these steps closely, ensuring each part is executed as described:
 
 ##### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
