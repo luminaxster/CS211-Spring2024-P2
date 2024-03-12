@@ -292,7 +292,7 @@ java -cp bin:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.ja
 ```
 ##### MS Windows
 ```cmd
-java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher --scan-class-path
+java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher execute --scan-class-path
 ```
 
 ## Submission:
