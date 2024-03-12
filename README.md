@@ -9,6 +9,10 @@ The purpose of this assignment is to familiarize you with generics through the u
 - Becoming familiar with reading the JavaDocs of the `westworld` package.
 - Running tests via the template class `DoloresTest.java`.
 
+## ChangeLog
+
+- None yet.
+
 ## Prelude
 
 As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
@@ -17,9 +21,6 @@ To guide you through this project, we included the easter eggs in P1. The aim is
 
 **Scripts for compiling your code and executing your tests are also provided.**
 
-## ChangeLog
-
-- None yet.
 
 ## Rules
 0. **This project is an individual effort; the Honor Code applies.**
