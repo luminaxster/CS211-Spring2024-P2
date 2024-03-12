@@ -8,11 +8,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
 
-In P2, you will be tasked with extending and implementing logic in new classes, interfaces, and a test class that you'll have to implement to specification.
-
 To guide you through this project, we included the easter eggs in P1. The aim is to ensure that the instructions are clear and the level of difficulty is manageable. The primary focus will be on structuring your code correctly, which will account for 50% of the project. The remaining 50% will involve algorithmic challenges within `NarrativeLoop`.
-
-Remember, the goal here is not just to complete the task but to understand and apply Java constructs effectively. Take this opportunity to solidify your understanding and showcase your problem-solving skills in a structured and logical manner.
 
 ## ChangeLog
 
