@@ -24,12 +24,16 @@ To guide you through this project, we included the easter eggs in P1. The aim is
 
 ## Rules
 0. **This project is an individual effort; the Honor Code applies.**
-1. **Download the source code (click green button "<> code" at the top-right of the page, and select Download ZIP)**. Do not modify the structure of the directories nor the code for the package `westworld`. 
+1. Do not modify the structure of the directories nor the code for the package `westworld`. 
 2. You may import the following types from `java.util`: `ArrayList`, `List`; `westworld`: all. Other imports are not allowed.
 3. The `main` method is no longer recommended; you will now required to put the "main" logic in unit tests.
 4. Comment your code, especially any parts that are not obvious what you're doing. Consider explaining your loops and methods. 
 5. Class fields should not in general be visible to other classes (unless otherwise specified). Create getter methods instead.
 6. You may add your own helper methods or data fields, but they must be declared `private`.
+
+## Download the source code 
+
+Click on green button `<> code` at the top-right of this page and select **Download ZIP**. 
 
 ## WestWorld package [DO NOT MODIFY]
 Refer to the JavaDoc( located at `westworld/docs/index.html` (Windows: `westworld\docs\ndex.html`) to explore the API; it's unnecessary to review the code to utilize the package. However, if you're interested in potential solutions for P1 and E2, you're encouraged to examine them.
