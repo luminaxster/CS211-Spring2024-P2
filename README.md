@@ -4,10 +4,10 @@
 
 The purpose of this assignment is to familiarize you with generics through the use of `ArrayList` within a package. Your tasks involve:
 
-  - Creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, enumerations.
-  - Learning two types from the Java `collections` framework.
-  - Become familiar with reading Java docs of the `westworld` package.
-  - Run tests via the template class `DoloresTest.java`.
+- Creating a set of types for the `sublime` package, necessitating a grasp of generics, interfaces, exceptions, and enumerations.
+- Learning about two types from the Java `collections` framework.
+- Becoming familiar with reading the JavaDocs of the `westworld` package.
+- Running tests via the template class `DoloresTest.java`.
 
 ## Prelude
 
@@ -163,35 +163,39 @@ In alignment with the interface **specification**, implementing classes are task
 
 ### I. Dolores Class (inherits from Robot and is Wipeable)
 
-The `Dolores` class, extending `Robot` (from the `westworld` package) and implementing the `Wipeable` interface, embodies a complex entity capable of managing narrative loops and adhering to wipeable specifications.
+The `Dolores` class, extending `Robot` (from the `westworld` package) and implementing the `Wipeable` interface.
 
-#### Constructor: `protected Dolores()`
+#### Constructor: `Dolores()`
 
-Initializes `Dolores` with characteristics such as emergences, serial number, and capabilities (flies, autonomous, teleoperated), leveraging the `Robot` superclass constructor. Provide defaults for the parent:
+Initializes `Dolores`, which is protected method, with characteristics such as emergences, serial number, and capabilities (flies, autonomous, teleoperated), leveraging the `Robot` superclass constructor. Provide **defaults** for the parent; they are vestigial wirings from the old system:
 
 ```java
 String[] emergences, int serialNumber, boolean flies, boolean autonomous, boolean teleoperated
 ```
 
-#### Method: `final protected void addNarrativeLoop(NarrativeLoop narrativeLoop)`
+#### Method: `void addNarrativeLoop(NarrativeLoop narrativeLoop)`
 
-This method allows for the addition of `NarrativeLoop` instances to `Dolores`'s internal list, enabling the management and tracking of various narrative states.
+This method, final and  protected, allows for the addition of `NarrativeLoop` instances to `Dolores`'s internal list, enabling the management and tracking of various narrative states.
 
-#### Method: `protected final Machine[] getAbsoluteCapabilities()`
+#### Method: `Machine[] getAbsoluteCapabilities()`
 
-Throws an `UnsupportedOperationException`, indicating that fetching absolute capabilities directly is not supported, aligning with the need to safeguard sensitive information or functionality.
+This method, final and protected, throws an `UnsupportedOperationException`, indicating that fetching absolute capabilities directly is not supported.
 
-### Method: `public boolean freezeAllMotorFunctions()`
+### Method: `boolean freezeAllMotorFunctions()`
 
-Implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful.
+This public method implements the `freeze` operation from the `Wipeable` interface. This method is intended to halt all operations and activities, akin to a freeze command in a control system, returning `true` if successful. **It is ineffective on Dolores, it just returns false.**
 
-#### Method: `public MemorySnapshot analyze()`
+#### Method: `MemorySnapshot analyze()`
 
-Overrides the `analyze` method from the `Analyzable` interface. It provides logic to create a `MemorySnapshot` based on the latest `NarrativeLoop` in `Dolores`'s list, capturing the current state of narrative realms.
+Overrides the `analyze` method (public) from the `Analyzable` interface. It is designed to protect Dolores' memory from being wiped and to log each memory wipe.
 
-#### Method: `public void wipe()`
+- **Check for Empty List**: Initially, verify if `narrativeLoops`, the list holding narrative states, is empty. If so, return `null` to indicate there are no narratives to analyze.
+- **Obtain the last NarrativeLoop**: If the list isn't empty, obtain the last `NarrativeLoop` from `narrativeLoops`. This represents the most recent narrative state.
+- **Create a MemorySnapshot**: Using the last `NarrativeLoop`, construct a `MemorySnapshot` that includes the states from the `emulation`, `simulacra`, and `simulation` lists within the narative loop.
 
-Implements the wipe functionality required by the `Wipeable` interface. The method's body is to be defined with logic for resetting or clearing `Dolores`'s state, with a focus on handling narrative loops and memory states.
+#### Method: `void wipe()`
+
+Implements the wipe functionality required by the `Wipeable` interface. The public method's body is to be defined with logic for resetting or clearing `Dolores`'s state, with a focus on handling narrative loops and memory states.** Dolores does nothing with this method, an empty implementation is all there is.**
 
 ### J. Host Class (inherits from Dolores) 2 methods, one lienrs, one  needs to throws one exception,
 
