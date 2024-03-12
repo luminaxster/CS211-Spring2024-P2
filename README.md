@@ -56,7 +56,7 @@ Enum Details:
 
 ### B. Abstract NarrativeLoop Class
 
-Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter. We'll focus on the `updateNarrativeLoops` method, which will execute the core algorithm. In this class:
+Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`). Then, we'll focus on the `updateNarrativeLoops` method and related logic.
 
 #### Fields
 
@@ -68,9 +68,9 @@ The `NarrativeLoop` class includes three fields, all `final` and `protected`, `L
 
 #### Methods Flow
 
-In this class, you will process simple emergences, each characterized by a single `kind` property contained within a string. For example, emergences like `["{'kind': 'Square'}", "{'kind': 'Box'}"]` will be used.
+In this class, you will process **simple** emergences, each characterized by a single `kind` property contained within a string. For example, emergences like `["{'kind': 'Square'}", "{'kind': 'Box'}"]` will be used.
 
-Make sure that you:
+**Make sure that you:**
 
 - Implement logic in the `NarrativeLoop` class to categorize emergences into three `ArrayLists`: `emulation`, `simulacra`, and `simulation`, based on their `kind`.
 - Provide test values for each list to adequately exercise the categorization logic.
