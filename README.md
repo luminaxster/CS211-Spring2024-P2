@@ -130,9 +130,29 @@ Opting for a record, similar to the approach in `westworld.src.main.PartState`, 
 
 ### F. Freezable Interface
 
+The `Freezable` interface is designed to provide a standardized **specification** for objects that require the functionality to temporarily suspend their operations. This interface mandates the implementation of a specific behavior to "freeze" ongoing processes, ensuring the safe cessation of activities.
+
+#### Method: `boolean freeze()`
+
+The implementing classes providea behavior according to the interface **specification**.
+
 ### G. Analyzable Interface
 
+### Analyzable Interface
+
+The `Analyzable` interface is crafted to establish a uniform **specification** for objects that necessitate the capability to be analyzed, yielding insights or data snapshots of their current state. This interface obligates the concrete implementation of an analysis routine that scrutinizes the object's state or behavior.
+
+#### Method: `MemorySnapshot analyze()`
+
+The method to be implemented as per the interface **specification** mandates that implementing classes provide a behavior that analyzes the current state or condition of the object and returns a `MemorySnapshot`.
+
 ### H. Wipeable Interface (inherits from Analyzable)
+
+The `Wipeable` interface extends the `Analyzable` interface, introducing **specifications** for objects that not only require analytical capabilities but also the ability to reset or clear their state. This extension ensures that objects adhering to this interface can both be analyzed and have their data or operations "wiped" to a clean state.
+
+#### Method: `void wipe()`
+
+In alignment with the interface **specification**, implementing classes are tasked with defining a behavior for the `wipe` method. This method, when invoked, should clear or reset the state of the object.
 
 ### I. Dolores Class (inherits from Robot) 4 methods, one liners
 
