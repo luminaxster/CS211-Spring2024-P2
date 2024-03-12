@@ -269,7 +269,9 @@ You are responsible for ensuring your code functions correctly according to the 
 
 ### DoloresTest Class
 
-Your test class `DoloresTest.java` in located in `src.test`. Provided test class template, one test method, with hints. **It will not be grade, but future projects and exercises will.**
+Your test class `DoloresTest.java` in located in `src.test`. It is a test class "test: Hello World!", with a single test method. Some hints are given to run your code.
+
+**It will not be graded, but future projects and exercises will. Start mastering JUnit now.**
 
 #### Compile your code bundle
 
