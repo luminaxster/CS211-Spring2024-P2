@@ -58,6 +58,14 @@ Enum Details:
 
 Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`) based on this filter, we'll focus on the `updateNarrativeLoops` method. This method will execute the core algorithm, effectively making up the crucial 20% that handles the classification and organization of narrative elements. In this class:
 
+### Fields
+
+The `NarrativeLoop` class includes three fields, all `final` and `protected`, `List` of `SystemWhole`s initialized to new `ArrayList`s:
+
+1. **emulation**
+2. **simulacra**
+3. **simulation**
+
 #### Methods Flow
 
 To implement the `NarrativeLoop` class, follow these steps closely, ensuring each part is executed as described:
