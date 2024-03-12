@@ -67,7 +67,10 @@ Remember:
   - Do not shy away from the shell (terminal, command prompt).
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
-All your work must be located in the directories matching the `src.main` package. Your test class `DoloresTest.java` is located in `src.test`.
+All your work must be located in the directory matching the `src.main` package. Implement the types to spec from A to J. `Dolores.java` in the only file there.
+
+
+Your test class `DoloresTest.java` is located in `src.test`.
 
 ### A.  Realm Enum
 The enum `Realm` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
