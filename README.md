@@ -173,7 +173,7 @@ The `Wipeable` interface extends the `Analyzable` interface, introducing **speci
 
 #### Methods
 
-###### `void wipe()`
+##### `void wipe()`
 
 In alignment with the interface **specification**, implementing classes are tasked with defining a behavior for the `wipe` method. This method, when invoked, should clear or reset the state of the object.
 
