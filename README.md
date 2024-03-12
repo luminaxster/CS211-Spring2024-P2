@@ -126,21 +126,7 @@ They are [defense copies](https://docs.oracle.com/javase/8/docs/api/java/util/Ar
 - `simulacraMemory`: A list for the SIMULACRA realm.
 - `simulationMemory`: A list for the SIMULATION realm.
 
-#### Usage:
-
-`MemorySnapshot` is particularly valuable in systems that necessitate the monitoring of different narrative realms for performance optimization, diagnostics, or deeper understanding of complex behaviors, such as those exhibited by robots. 
-
-#### Record Advantages:
-
 Opting for a record, similar to the approach in `westworld.src.main.PartState`, offers benefits like immutability, simplicity in state representation, and an inbuilt pattern of equality and hashing, making it an ideal choice for data structures intended to hold snapshot information.
-
-#### Documentation:
-
-For more information on records and their usage, you can refer to the [official Java documentation](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Record.html).
-
-#### Encouragement:
-
-Users are encouraged to utilize records for their simplicity and effectiveness in representing data structures like `MemorySnapshot`, which are primarily used for data encapsulation without the need for extensive behavior or logic.
 
 ### F. Freezable Interface
 
