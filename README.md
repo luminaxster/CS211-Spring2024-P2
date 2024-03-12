@@ -225,7 +225,7 @@ This public method implements the freeze-like operation. This method is intended
 
 ##### `MemorySnapshot analyze()`
 
-Overrides the `analyze` method (public) from the `Analyzable` interface. It is designed to protect Dolores' memory from being wiped and to log each memory wipe.
+Overrides the `analyze` method (public) from the `Analyzable` interface via `Wipeable`. It is designed to protect Dolores' memory from being wiped and to log each memory wipe.
 
 - **Check for Empty List**: Initially, verify if `narrativeLoops`, the list holding narrative states, is empty. If so, return `null` to indicate there are no narratives to analyze.
 - **Obtain the last NarrativeLoop**: If the list isn't empty, obtain the last `NarrativeLoop` from `narrativeLoops`. This represents the most recent narrative state.
