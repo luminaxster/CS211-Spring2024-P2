@@ -263,13 +263,25 @@ This public method:
 - Implements the `freeze` method from the `Freezable` interface by invoking `freezeAllMotorFunctions()`. This ensures that the freeze behavior defined specifically in the `Host` class is used for the `Freezable` interface's freeze operation.
 - The return value of `freezeAllMotorFunctions()` (which is always `true`) is also the return value of this `freeze` method, indicating the success of the freeze operation.
 
-## Testing:
+## Compilation and Running Tests:
 
 You are responsible for ensuring your code functions correctly according to the description provided above. A validation checker will be made available on gradescope which will try to catch errors that would prevent the autograder from running. Passing this validation check does not guarantee that all of the required logic has been implemented correctly. You should write your own tests which exercise all of the required functionality in a variety of different situations in order to verify that your code operates as you expect it to. Code which does not compile or fails any of the validation checks may receive zero credit.
 
 ### DoloresTest Class
 
 Your test class `DoloresTest.java` in located in `src.test`. Provided test class template, one test method, with hints. **It will not be grade, but future projects and exercises will.**
+
+To run you code via `JUnit`:
+
+#### Unix-Like (Linux, MacOS)
+
+```sh
+java -cp bin:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher execute --scan-class-path
+```
+#### MS Windows
+```cmd
+java -cp bin;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar org.junit.platform.console.ConsoleLauncher --scan-class-path
+```
 
 ## Submission:
 
