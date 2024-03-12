@@ -39,11 +39,11 @@ Click on green button `<> code` at the top-right of this page and select **Downl
 
 ### The directory  `CS211_P2` contains the directories `westworld`, `sublime`, and `lib`.
 
-All required to compile and run your code.
+### All required to compile and run your code.
 
 
 ## WestWorld package [DO NOT MODIFY]
-Refer to the JavaDoc( located at `westworld/docs/index.html` (Windows: `westworld\docs\ndex.html`) to explore the API; it's unnecessary to review the code to utilize the package. However, if you're interested in potential solutions for P1 and E2, you're encouraged to examine them.
+Refer to the JavaDoc located at `westworld/docs/index.html` or `westworld\docs\index.html` to explore the API; it's unnecessary to review the code to utilize the package. However, if you're interested in potential solutions for P1 and E2, you're encouraged to examine them.
 
 Now, you'll need to employ the `Robot` class for your `sublime` package implementation. While reading the documentation, note that four easter eggs have been incorporated within P1, illustrating how E1's Robot has become extremely powerful, albeit abstractly.
 
