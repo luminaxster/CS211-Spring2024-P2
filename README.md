@@ -381,3 +381,7 @@ Alternatively, try saving your workspace, and make sure your config looks like t
     }
 }
 ```
+
+## I cannot seem to get my tests to work, where do I start?
+
+If you reached here, take this test file as a [token of appreciation](CS211_P2/sublime/src/test/FordTest.java).
