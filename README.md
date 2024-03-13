@@ -66,13 +66,15 @@ Remember:
   - Be precise with the names and types in every abstraction you work on.
   - Prefer copying from the description rather than transcribing.
   - Be mindful of naming conventions and case sensitivity.
-  - Compile and run your code (including tests) **locally**. Refrain from using GradeScope as fallback.
+  - Compile and run your code (including tests) **locally**. Your test class `DoloresTest.java` is located in `src.test`. More details in Compilation and Running Tests. Refrain from using GradeScope directly.
   - Do not shy away from the shell (terminal, command prompt).
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
-All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`). Implement the types to spec from A to J. `Bernard.java` is the only file there so far. 
+### All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`)
+### Implement the types to spec from A to J. Each type on a separate file.
+### `Bernard.java` is the only file there so far. 
 
-**NOTE:** Your test class `DoloresTest.java` is located in `src.test`. More details in Compilation and Running Tests.
+**NOTE:** 
 
 ### Bernard Class [DO NOT MODIFY]
 The `Bernard` class provides a static utility method for analyzing emergences, represented as strings, and encapsulating them within a `SystemWhole` instance. All `SystemWhole` instances are 'analyzed' here before being used for narrative purposes (`NarrativeLoop`).  
