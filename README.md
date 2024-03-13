@@ -13,7 +13,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 - `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
 - `03/12/2024 2:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores ain't Freezable. 
-- `03/12/2024 9:00 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification. 
+- `03/12/2024 9:00 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers. 
 
 ## Prelude
 
@@ -104,12 +104,16 @@ In this class, you will process **simple** emergences, each characterized by a s
 - Implement logic in the `NarrativeLoop` class to categorize emergences into three `ArrayLists`: `emulation`, `simulacra`, and `simulation`, based on their `kind`.
 - Provide test values for each list to adequately exercise the categorization logic.
 
+
+
+##### void wipeNarrativeLoops()
+This default method clear the lists. The method resets the narrative environment by clearing the `emulation`, `simulacra`, and `simulation` lists, removing all `SystemWhole` instances from each realm. For more details, check the [`List.clear()` API docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#:~:text=void%C2%A0clear,this%20call%20returns.).
+
 Now, to implement the `NarrativeLoop` class methods, follow these steps closely, the flow, ensuring each part is executed as described:
 
-##### Step 0: void wipeNarrativeLoops()
-Clear the lists. The method resets the narrative environment by clearing the `emulation`, `simulacra`, and `simulation` lists, removing all `SystemWhole` instances from each realm. For more details, check the [`List.clear()` API docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#:~:text=void%C2%A0clear,this%20call%20returns.).
-
 ##### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
+
+To implement this final method:
 
 - Begin by iterating over each `SystemWhole` in the `emulationContext` array.
   - For each `SystemWhole`, iterate through the `Machines` it contains.
@@ -121,6 +125,8 @@ Clear the lists. The method resets the narrative environment by clearing the `em
 
 ##### Step 2: determineRealm(String kind, SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
+To implement this final and private method:
+
 - Check for the presence of the `Machine` kind in both `emulationContext` and `simulacraContext` using `isInContext`.
 - Assign `Realm.SIMULATION` if the kind is found in both contexts.
 - Assign `Realm.SIMULACRA` if the kind is found only in `simulacraContext`.
@@ -128,12 +134,16 @@ Clear the lists. The method resets the narrative environment by clearing the `em
 
 ##### Step 3: isInContext(String kind, SystemWhole[] context)
 
+To implement this final and private method:
+
 - Iterate through the `SystemWhole` array provided as `context`.
   - Within each `SystemWhole`, iterate through its `Machines`.
   - Return `true` if any `Machine` matches the specified kind.
 - Return `false` if no match is found.
 
 ##### Step 4: containsKind(List<SystemWhole> list, String kind)
+
+To implement this final and private method:
 
 - Iterate over the provided `list` of `SystemWhole` instances.
   - For each `SystemWhole`, iterate through its `Machines`.
