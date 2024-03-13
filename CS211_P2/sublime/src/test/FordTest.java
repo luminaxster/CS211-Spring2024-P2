@@ -15,7 +15,6 @@ import src.main.SystemWhole;
 // import src.main.MemorySnapshot;
 // import src.main.NarrativeLoop;
 
-// Author: Dr. Ford
 public class FordTest{
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
