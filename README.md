@@ -12,8 +12,9 @@ The purpose of this assignment is to familiarize you with generics through the u
 ## ChangeLog
 
 - `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
-- `03/12/2024 2:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores ain't Freezable. 
-- `03/12/2024 9:00 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers. 
+- `03/12/2024 02:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores ain't Freezable. 
+- `03/12/2024 09:00 PM` `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers.
+- `03/13/2024 08:20 AM` `Bernard)`: added missing class specification, it "manages" `SystemWhole`s. 
 
 ## Prelude
 
@@ -69,10 +70,19 @@ Remember:
   - Do not shy away from the shell (terminal, command prompt).
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
-All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`). Implement the types to spec from A to J. `Dolores.java` is the only file there so far.
+All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`). Implement the types to spec from A to J. `Bernard.java` is the only file there so far. 
 
+**NOTE:** Your test class `DoloresTest.java` is located in `src.test`. More details in Compilation and Running Tests.
 
-Your test class `DoloresTest.java` is located in `src.test`.
+### Bernard Class [DO NOT MODIFY]
+The `Bernard` class provides a static utility method for analyzing emergences, represented as strings, and encapsulating them within a `SystemWhole` instance. All `SystemWhole` instances are 'analyzed' here before being used for narrative purposes (`NarrativeLoop`).  
+
+#### Methods
+##### `public static final SystemWhole analysis(String[] emergences)`
+
+- **Purpose**: This method takes an array of strings, each representing an "emergence", and creates a `SystemWhole` object from it. 
+- **Process**: It directly constructs a new `SystemWhole` instance, passing the `emergences` array to its constructor. 
+- **Return Value**: The method returns the newly created `SystemWhole` instance, which now encapsulates the provided emergences.
 
 ### A.  Realm Enum
 The enum `Realm` is integral to a narrative management system, specifically used within the `NarrativeLoop` class to categorize narrative processes.
