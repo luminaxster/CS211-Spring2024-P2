@@ -14,7 +14,8 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
 - `03/12/2024 02:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores ain't Freezable. 
 - `03/12/2024 09:00 PM` `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers.
-- `03/13/2024 08:20 AM` `Bernard`: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field". 
+- `03/13/2024 08:20 AM` `Bernard`: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
+- `03/13/2024 08:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing I am breaking API control =(.
 
 ## Prelude
 
@@ -117,13 +118,13 @@ In this class, you will process **simple** emergences, each characterized by a s
 
 
 ##### void wipeNarrativeLoops()
-This default method clear the lists. The method resets the narrative environment by clearing the `emulation`, `simulacra`, and `simulation` lists, removing all `SystemWhole` instances from each realm. For more details, check the [`List.clear()` API docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#:~:text=void%C2%A0clear,this%20call%20returns.).
+This public method clear the lists. The method resets the narrative environment by clearing the `emulation`, `simulacra`, and `simulation` lists, removing all `SystemWhole` instances from each realm. For more details, check the [`List.clear()` API docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#:~:text=void%C2%A0clear,this%20call%20returns.).
 
 Now, to implement the `NarrativeLoop` class methods, follow these steps closely, the flow, ensuring each part is executed as described:
 
 ##### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
-To implement this final method:
+To implement this final and public method:
 
 - Begin by iterating over each `SystemWhole` in the `emulationContext` array.
   - For each `SystemWhole`, iterate through the `Machines` it contains.
@@ -228,7 +229,7 @@ The `Dolores` class, extending `Robot` (from the `westworld` package) and implem
 
 ##### Constructor: `Dolores()`
 
-Initializes `Dolores`, which is protected method, with characteristics such as emergences, serial number, and capabilities (flies, autonomous, teleoperated), leveraging the `Robot` superclass constructor. Provide **defaults** for the parent; they are vestigial wirings from the old system:
+Initializes `Dolores`, which is public method, with characteristics such as emergences, serial number, and capabilities (flies, autonomous, teleoperated), leveraging the `Robot` superclass constructor. Provide **defaults** for the parent; they are vestigial wirings from the old system:
 
 ```java
 String[] emergences, int serialNumber, boolean flies, boolean autonomous, boolean teleoperated
@@ -236,11 +237,11 @@ String[] emergences, int serialNumber, boolean flies, boolean autonomous, boolea
 
 ##### `void addNarrativeLoop(NarrativeLoop narrativeLoop)`
 
-This method, final and  protected, allows for the addition of `NarrativeLoop` instances to `Dolores`'s internal list, enabling the management and tracking of various narrative states.
+This method, final and  public, allows for the addition of `NarrativeLoop` instances to `Dolores`'s internal list, enabling the management and tracking of various narrative states.
 
 ##### `Machine[] getAbsoluteCapabilities()`
 
-This method, final and protected, throws an `UnsupportedOperationException`, indicating that fetching absolute capabilities directly is not supported.
+This method, final and public, throws an `UnsupportedOperationException`, indicating that fetching absolute capabilities directly is not supported.
 
 ##### `boolean freezeAllMotorFunctions()`
 
@@ -273,7 +274,7 @@ The `Host` class represents a nuanced entity capable of engaging with narrative 
 
 ##### Constructor: `Host(NarrativeLoop narrativeLoop)`
 
-Make sure it calls its the `Dolores` superclass's constructor.
+Make sure this public method calls its the `Dolores` superclass's constructor.
 - The `narrativeLoop` argument is directly assigned to the `Host` class's `private final NarrativeLoop narrativeLoop` field. This field holds a reference to the `NarrativeLoop` instance associated with this `Host`.
 - `addNarrativeLoop(narrativeLoop);` adds the provided `NarrativeLoop` instance to a collection within `Dolores`, ensuring it's part of Dolores's narrative management.
 
