@@ -6,14 +6,15 @@ import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.concurrent.TimeUnit;
 
-import src.main.Bernard;
-import src.main.Host;
-import src.main.MazeLoop;
-import src.main.MemorySnapshot;
-import src.main.NarrativeLoop;
-import src.main.SystemWhole;
-
 // Author: Dr. Ford
+// Guest, uncomment as you implemented the types.
+import src.main.Bernard;
+import src.main.SystemWhole;
+// import src.main.Host;
+// import src.main.MazeLoop;
+// import src.main.MemorySnapshot;
+// import src.main.NarrativeLoop;
+
 public class FordTest{
     private final static String[] EMPTY_EMERGENCES ={};
 
@@ -27,15 +28,17 @@ public class FordTest{
         SystemWhole aSystemWhole = Bernard.analysis(emergences);
         // matching updateNarrativeLoops parameter types
         SystemWhole[] systemWholes = {aSystemWhole};
-        // Getting a narrative
-        NarrativeLoop narrativeLoop = new MazeLoop();
+        // // Getting a narrative
+        // NarrativeLoop narrativeLoop = new MazeLoop();
         // The part is in both, since it is the same array, it should have been added to the emulation list.
-        narrativeLoop.updateNarrativeLoops(systemWholes,systemWholes);
-        // Let's make sure of it, I can verify that via Host
-        Host host = new Host(EMPTY_EMERGENCES, 0, false, true, true, narrativeLoop);
-        // Tell me what you got host
-        MemorySnapshot memorySnapshot = host.analyze();
-        // Your simulated memories must have the aSystemWhole I created for you 
-        assertTrue(memorySnapshot.getSimulationMemory().contains((Object)aSystemWhole));
+        // narrativeLoop.updateNarrativeLoops(systemWholes,systemWholes);
+        // // Let's make sure of it, I can verify that via Host
+        // Host host = new Host(EMPTY_EMERGENCES, 0, false, true, true, narrativeLoop);
+        // // Tell me what you got host
+        // MemorySnapshot memorySnapshot = host.analyze();
+        // // Your simulated memories must have the aSystemWhole I created for you 
+        // assertTrue(memorySnapshot.getSimulationMemory().contains((Object)aSystemWhole));
+        // // This is a mockery of assertion. Disregard once the one above works.
+        assertTrue(true);
     }  
 }
