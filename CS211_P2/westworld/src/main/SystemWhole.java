@@ -27,7 +27,7 @@ public class SystemWhole {
      * @param emergences An array of JSON strings representing new emergences.
      */
 
-    SystemWhole(String[] emergences) {
+    public SystemWhole(String[] emergences) {
         this.emergencesFromPhenomena(emergences);
     }
 
