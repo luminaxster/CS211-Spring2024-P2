@@ -13,7 +13,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 - `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
 - `03/12/2024 2:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores does not implements Freezable. 
-- `03/12/2024 9:)0 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification. 
+- `03/12/2024 9:00 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification. 
 
 ## Prelude
 
