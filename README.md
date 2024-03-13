@@ -332,3 +332,27 @@ At the top of each source file, include the following information in a comment: 
 
 **Verify your submission:** Go back to Gradescope, download the files you just submitted, double-check their contents, rerun your tests. If something is wrong, you can resubmit as many times as you want before the deadline expires.
 Make a backup of your files on OneDrive (use your mason account).
+
+---
+# FAQ
+
+## For my Dolores.java file, I cannot seem to import `westworld` correctly?
+
+That is VS Code assistance issue, not Java imports, I believe there is config file in the project: `CS211_P2/P2.code-workspace`. Opening it will configure your VS Code's project source paths.
+
+Alternatively, try saving your workspace, and make sure your config looks like this:
+```js
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "java.project.sourcePaths": [
+            "sublime",
+            "westworld"
+        ]
+    }
+}
+```
