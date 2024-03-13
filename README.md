@@ -11,8 +11,9 @@ The purpose of this assignment is to familiarize you with generics through the u
 
 ## ChangeLog
 
-- `03/12/2024 10:45 AM` Remove group instructions, it is an individual project.
-- `03/12/2024 2:50 PM` freezeAllMotorFunctions(): removed the freeze-wipe logic confusion. Dolores does not implements Freezable. 
+- `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
+- `03/12/2024 2:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores does not implements Freezable. 
+- `03/12/2024 9:)0 PM`  `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification. 
 
 ## Prelude
 
@@ -104,6 +105,9 @@ In this class, you will process **simple** emergences, each characterized by a s
 - Provide test values for each list to adequately exercise the categorization logic.
 
 Now, to implement the `NarrativeLoop` class methods, follow these steps closely, the flow, ensuring each part is executed as described:
+
+##### Step 0: void wipeNarrativeLoops()
+Clear the lists. The method resets the narrative environment by clearing the `emulation`, `simulacra`, and `simulation` lists, removing all `SystemWhole` instances from each realm. For more details, check the [`List.clear()` API docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#:~:text=void%C2%A0clear,this%20call%20returns.).
 
 ##### Step 1: updateNarrativeLoops(SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
