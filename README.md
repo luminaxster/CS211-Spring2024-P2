@@ -14,7 +14,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/12/2024 10:45 AM` Uploading your solution: Removed group instructions, it is an individual project.
 - `03/12/2024 02:50 PM` `Dolores.freezeAllMotorFunctions()`: removed the freeze-wipe logic confusion. Dolores ain't Freezable. 
 - `03/12/2024 09:00 PM` `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers.
-- `03/13/2024 08:20 AM` `Bernard`: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
+- `03/13/2024 08:20 AM` `Bernard` class: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
 - `03/13/2024 02:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing, this totally exposes the `sublime` API in production =(.
 - `03/14/2024 03:10 PM` `NarrativeLoop.updateNarrativeLoops()`: clarified what the logic for adding `SystemWhole`s to the lists is.
   
