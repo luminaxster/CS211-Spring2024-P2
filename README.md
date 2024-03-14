@@ -73,8 +73,11 @@ Remember:
   - **You are a computer scientist, you are in control of tech not the other way around.**
 
 #### All your work must be located in the directory matching the `src.main` package (`CS211_P2/sublime/src/main/` or `CS211_P2\sublime\src\main\`)
+![image](https://github.com/luminaxster/CS211-Spring2024-P2/assets/6577822/75e28ecb-71b4-46a2-9129-d5daa3679438)
 ### Implement the types to spec from A to J. Each type on a separate file.
-#### `Bernard.java` is the only file there so far. 
+#### `Bernard.java` is the only file there so far.
+
+
 
 ### Bernard Class [DO NOT MODIFY]
 The `Bernard` class provides a static utility method for analyzing emergences, represented as strings, and encapsulating them within a `SystemWhole` instance. All `SystemWhole` instances are 'analyzed' here before being used for narrative purposes (`NarrativeLoop`).  
@@ -362,11 +365,16 @@ Make a backup of your files on OneDrive (use your mason account).
 ---
 # FAQ
 
+## I am getting import errors when using the `westworld` package?
+
+make sure your project files are in the `CS211_P2/sublime/src/main/` directory (Linux, macOS, and other Unix-based operative systems)  or `CS211_P2\sublime\src\main\` folder (Windows).
+
 ## For my Dolores.java file, I cannot seem to import `westworld` correctly?
 
-That is VS Code assistance issue, not Java imports, I believe there is config file in the project: `CS211_P2/P2.code-workspace`. Opening it will configure your VS Code's project source paths.
+That is `VS Code` assistance issue, not Java imports, I believe there is config file in the project: `CS211_P2/P2.code-workspace`. Opening it will configure your VS Code's project source paths.
 
 Alternatively, try saving your workspace, and make sure your config looks like this:
+
 ```js
 {
     "folders": [
