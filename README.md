@@ -17,7 +17,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/13/2024 08:20 AM` `Bernard`: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
 - `03/13/2024 02:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing, this totally exposes the `sublime` API in production =(.
 - `03/14/2024 03:10 PM` `NarrativeLoop.updateNarrativeLoops()`: clarified what the logic for adding `SystemWhole`s to the lists is.
-- 
+  
 ## Prelude
 
 As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
