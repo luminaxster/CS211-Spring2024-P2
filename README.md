@@ -16,7 +16,8 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/12/2024 09:00 PM` `NarrativeLoop.wipeNarrativeLoop()`: added missing method specification, and visibility modififiers.
 - `03/13/2024 08:20 AM` `Bernard`: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
 - `03/13/2024 02:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing, this totally exposes the `sublime` API in production =(.
-
+- `03/14/2024 03:10 PM` `NarrativeLoop.updateNarrativeLoops()`: clarified what the logic for adding `SystemWhole`s to the lists is.
+- 
 ## Prelude
 
 As you embark on Project 2 (P2), you're building upon the foundation laid in Project 1 (P1), with reduced complexity, where you've already started working with JSON-like strings to represent parts of a `Machine` within Exercise 2's (E2) `Robot`.
@@ -129,10 +130,10 @@ To implement this final and public method:
 - Begin by iterating over each `SystemWhole` in the `emulationContext` array.
   - For each `SystemWhole`, iterate through the `Machines` it contains.
   - Invoke `determineRealm` with the `Machine`'s kind and both context arrays as parameters.
-  - If `determineRealm` returns `Realm.EMULATION` and `containsKind` confirms the `emulation` list doesn't already include a `Machine` of this kind, add the `SystemWhole` to `emulation`.
-- Repeat the process for the `simulacraContext` array.
-  - For `Realm.SIMULACRA`, add unique `Machine` kinds to `simulacra`.
-  - For `Realm.SIMULATION`, add unique `Machine` kinds to `simulation`.
+  - If `determineRealm` returns `Realm.EMULATION` and `containsKind` confirms the `emulation` list doesn't already include a `Machine` of this kind or the same `SystemWhole` reference, add the `SystemWhole` to `emulation`.
+- Repeat the process for the `simulacraContext` array. Including checking for the `SystemWhole` reference already in the list, or any of its `Machine`s kinds. 
+  - For `Realm.SIMULACRA`, add `SystemWhole`s to `simulacra`.
+  - For `Realm.SIMULATION`, add `SystemWhole`s to `simulation`.
 
 ##### Step 2: determineRealm(String kind, SystemWhole[] emulationContext, SystemWhole[] simulacraContext)
 
