@@ -100,7 +100,7 @@ Enum Details:
 
 ### B. Abstract NarrativeLoop Class
 
-Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayLists` (`emulation`, `simulacra`, `simulation`). Then, we'll focus on the `updateNarrativeLoops` method and related logic.
+Implement the `NarrativeLoop` class and include logic for filtering `SystemWhole` parts by kind, then populating the three `ArrayList`s (`emulation`, `simulacra`, `simulation`). Then, we'll focus on the `updateNarrativeLoops` method and related logic.
 
 #### Fields
 
@@ -365,9 +365,9 @@ Make a backup of your files on OneDrive (use your mason account).
 ---
 # FAQ
 
-## I am getting import errors when using the `westworld` package?
+## Why am I getting import errors when using the `westworld` package?
 
-make sure your project files are in the `CS211_P2/sublime/src/main/` directory (Linux, macOS, and other Unix-based operative systems)  or `CS211_P2\sublime\src\main\` folder (Windows).
+Make sure your project files are in the `CS211_P2/sublime/src/main/` directory (Linux, macOS, and other Unix-based operative systems)  or `CS211_P2\sublime\src\main\` folder (Windows).
 
 ## For my Dolores.java file, I cannot seem to import `westworld` correctly?
 
