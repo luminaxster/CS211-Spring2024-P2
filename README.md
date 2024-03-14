@@ -328,7 +328,7 @@ javac -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar
 ```
 ##### MS Windows
 ```cmd
-javac -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\src\main\*.java sublime\src\main\*.java \src\test\*.java
+javac -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\src\main\*.java sublime\src\main\*.java sublime\src\test\*.java
 ```
 
 #### Run your code via `JUnit` tests:
