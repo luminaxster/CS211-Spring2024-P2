@@ -365,11 +365,13 @@ Make a backup of your files on OneDrive (use your mason account).
 ---
 # FAQ
 
-## Why am I getting import errors when using the `westworld` package?
+## Imports, Packages and IDE Configuration
+
+### Why am I getting import errors when using the `westworld` package?
 
 Make sure your project files are in the `CS211_P2/sublime/src/main/` directory (Linux, macOS, and other Unix-based operative systems)  or `CS211_P2\sublime\src\main\` folder (Windows).
 
-## For my Dolores.java file, I cannot seem to import `westworld` correctly?
+### For my Dolores.java file, I cannot seem to import `westworld` correctly?
 
 That is `VS Code` assistance issue, not Java imports, I believe there is config file in the project: `CS211_P2/P2.code-workspace`. Opening it will configure your VS Code's project source paths.
 
@@ -391,9 +393,28 @@ Alternatively, try saving your workspace, and make sure your config looks like t
 }
 ```
 
-## While working on `SystemWhole`'s `reify()` to get the `Machine`, but then I couldn't use the `getKind()` since it is protected, where should I place the file?
+### While working on `SystemWhole`'s `reify()` to get the `Machine`, but then I couldn't use the `getKind()` since it is protected, where should I place the file?
 
 Oh! All your files should be placed at `sublime/src/main`. `Bernard.java` should be there to lead the way.
+
+## `sublime` Types 
+
+## NarrativeLoop Hierarchy
+
+### How do `MazeLoop` and `HostLoop` subclasses function and interact in `NarrativeLoop` logic?
+
+In the context of `MazeLoop` and `HostLoop`, both subclasses of `NarrativeLoop`, here's a breakdown focusing on the **overriding** implications in OOP:
+
+1. **Parent Behavior (`NarrativeLoop`)**: The `NarrativeLoop` class has a method called [`wipeNarrativeLoops()`](https://github.com/luminaxster/CS211-Spring2024-P2/blob/main/README.md#void-wipenarrativeloops). This method is like a default action plan that clears out certain lists, essentially resetting its fields.
+
+2. **Child Behavior - `MazeLoop`**:
+   - `MazeLoop` takes this inherited action plan but decides to change it. When we say it's going to "implement maze-specific narrative wiping logic, which is just not allow the inherited wipe behavior," it means `MazeLoop` is using its own set of rules for clearing things out, ignoring the inherited method provided by `NarrativeLoop`.
+   - This overriding in `MazeLoop` implies it's deliberately choosing **not** to follow the parent's instructions. Instead, it introduces its own approach tailored for maze scenarios, wich is an empty code block.
+
+3. **Child Behavior - `HostLoop`**:
+   - Unlike `MazeLoop`, `HostLoop` doesn't change the original action plan. It sticks with the default method from `NarrativeLoop` for clearing the lists, meaning it follows the parent's instructions without any modifications.
+
+## Compilation and Running Tests
 
 ## I cannot seem to get my tests to work, where do I start?
 
