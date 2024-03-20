@@ -17,6 +17,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/13/2024 08:20 AM` `Bernard` class: added missing class specification, it "manages" `SystemWhole`s. `Host.wipe()`: Phrasing: "on" to "of the narrativeLoop field".
 - `03/13/2024 02:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing, this totally exposes the `sublime` API in production =(.
 - `03/14/2024 03:10 PM` `NarrativeLoop.updateNarrativeLoops()`: clarified what the logic for adding `SystemWhole`s to the lists is.
+- `03/20/2024 10:00 AM` `compilation and execution commands`: Updated java version `11` to `14` added `enable-preview`.
   
 ## Prelude
 
@@ -53,7 +54,7 @@ Refer to the JavaDoc located at `westworld/docs/index.html` or `westworld\docs\i
 Now, you'll need to employ the `Robot` class for your `sublime` package implementation. While reading the documentation, note that four easter eggs have been incorporated within P1, illustrating how E1's Robot has become extremely powerful, albeit abstractly.
 
 # DO NOT PROCEED WITHOUT READING THE DOCUMENTATION
-# MAKE SURE YOUR JAVA VERSION IS AT LEAST 11
+# MAKE SURE YOUR JAVA VERSION IS equals or greater than 14
 # Do not use deprecated types or members
 
 
@@ -156,7 +157,7 @@ To implement this final and private method:
   - Return `true` if any `Machine` matches the specified kind.
 - Return `false` if no match is found.
 
-##### Step 4: containsKind(List<SystemWhole> list, String kind)
+##### Step 4: containsKind(List`<SystemWhole>` list, String kind)
 
 To implement this final and private method:
 
@@ -324,11 +325,11 @@ Your test class `DoloresTest.java` in located in `src.test`. It is a test class 
 ##### Unix-Like (Linux, MacOS)
 
 ```bash
-javac -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar -d bin westworld/**/*.java sublime/**/*.java
+javac --enable-preview --release 14 -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar -d bin westworld/**/*.java sublime/**/*.java
 ```
 ##### MS Windows
 ```cmd
-javac -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\src\main\*.java sublime\src\main\*.java sublime\src\test\*.java
+javac --enable-preview --release 14 -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\src\main\*.java sublime\src\main\*.java sublime\src\test\*.java
 ```
 
 #### Run your code via `JUnit` tests:
