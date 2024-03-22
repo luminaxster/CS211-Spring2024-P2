@@ -320,9 +320,28 @@ Your test class `DoloresTest.java` in located in `src.test`. It is a test class 
 
 **It will not be graded, but future projects and exercises will. Start mastering JUnit now.**
 
-#### Compile your code bundle
+#### Compile your code bundle (Java versions > 14)
 
 ##### Unix-Like (Linux, MacOS)
+
+```bash
+javac -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar -d bin westworld/**/*.java sublime/**/*.java
+```
+##### MS Windows
+```cmd
+javac -cp ".;lib\junit-jupiter-api-5.10.2.jar;lib\junit-vintage-engine-5.10.2.jar;lib\apiguardian-api-1.1.2.jar;lib\junit-platform-console-standalone-1.10.2.jar" -d bin westworld\src\main\*.java sublime\src\main\*.java sublime\src\test\*.java
+```
+
+#### Compilation for Java versions <=14
+
+If the commands above did not work, perhaps the Java version in your machine may be the reason. Check it with this command.
+
+```bash
+java --version
+```
+
+If the version is not greater than 14, you will have use these commands instead. Do not forget to replace the `--release` number. The following commmands assume a Java 14 version in the machine.
+
 
 ```bash
 javac --enable-preview --release 14 -cp .:lib/junit-jupiter-api-5.10.2.jar:lib/junit-vintage-engine-5.10.2.jar:lib/apiguardian-api-1.1.2.jar:lib/junit-platform-console-standalone-1.10.2.jar -d bin westworld/**/*.java sublime/**/*.java
