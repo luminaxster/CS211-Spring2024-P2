@@ -35,7 +35,8 @@ public class FordTest{
             //  // Tell me what you got host
             //  MemorySnapshot memorySnapshot = host.analyze();
             //  // Your simulated memories must have the aSystemWhole I created for you 
-            //  assertTrue(memorySnapshot.getSimulationMemory().contains((Object)aSystemWhole));
+            // // typo: the implementation is via record rather that manual class getter: memorySnapshot.getSimulationMemory()
+            //  assertTrue(memorySnapshot.simulationMemory().contains((Object)aSystemWhole));
             //  // This is a mockery of an assertion. Disregard once the one above works.
              assertTrue(true);
     }  
