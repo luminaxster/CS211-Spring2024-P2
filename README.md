@@ -18,6 +18,7 @@ The purpose of this assignment is to familiarize you with generics through the u
 - `03/13/2024 02:15 PM` `Dolores` and `Host`: all methods have public visibility. **Careful:** done to simplify testing, this totally exposes the `sublime` API in production =(.
 - `03/14/2024 03:10 PM` `NarrativeLoop.updateNarrativeLoops()`: clarified what the logic for adding `SystemWhole`s to the lists is.
 - `03/20/2024 10:00 AM` `compilation and execution commands`: Updated java version `11` to `14` added `enable-preview`.
+- `04/05/2024 01:00 PM` `FordTest.java "typo"`: `memorySnapshot.getSimulationMemory()` is `memorySnapshot.simulationMemory()`.
   
 ## Prelude
 
