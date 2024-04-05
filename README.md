@@ -321,6 +321,8 @@ Your test class `DoloresTest.java` in located in `src.test`. It is a test class 
 
 **It will not be graded, but future projects and exercises will. Start mastering JUnit now.**
 
+#### All commands require the current directory (folder) in your CLI (terminal, cmd) to be at `CS211_P2`
+
 #### Compile your code bundle (Java versions > 14)
 
 ##### Unix-Like (Linux, MacOS)
